@@ -1,0 +1,38 @@
+:root {
+    --font: #fff;
+    --bg-header: rgb(51, 118, 206);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+header {
+    background: var(--bg-header);
+    padding: 15px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--font);
+}
+
+section {
+    width: 60vw;
+    margin: 20px auto;
+}
+.menu {
+    width: 250px;
+    margin: auto;
+}
+button {
+    width: 250px;
+    padding: 10px;
+}
+
+input {
+    margin-bottom: 5px;
+}

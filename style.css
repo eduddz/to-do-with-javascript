@@ -1,38 +1,72 @@
-:root {
-    --font: #fff;
-    --bg-header: rgb(51, 118, 206);
-}
-
 * {
     margin: 0;
     padding: 0;
-
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
 header {
-    background: var(--bg-header);
-    padding: 15px;
-    text-align: center;
+    padding: 20px;
+    background: rgb(7, 144, 255);
+    color: white;
+
 }
 
 h1 {
-    color: var(--font);
+    font-size: 56px;
 }
 
-section {
-    width: 60vw;
-    margin: 20px auto;
+.wrapper {
+    margin: 20px;
 }
-.menu {
-    width: 250px;
-    margin: auto;
-}
-button {
-    width: 250px;
+
+.wrapper input {
+    margin-top: 10px;
+    margin-bottom: 20px;
     padding: 10px;
+    width: 300px;
 }
 
-input {
-    margin-bottom: 5px;
+#todoList {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.todo-item {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.todo-item > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 20px 10px;
+    box-shadow: 0 0 2px black;
+    border-left: 3px solid black;
+}
+
+.todo-item div > input {
+    margin: 0;
+    padding: 0
+}
+
+.todo-item input {
+    width: auto;
+}
+
+.todo-item div input:nth-child(3) {
+    background: black;
+    color: white;
+    border: 0;
+    padding: 4px 8px;
 }

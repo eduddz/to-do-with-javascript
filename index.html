@@ -4,18 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>To Do List</title>
     
 </head>
 <body>
     <header>
-        <h1>Bloco de Notas</h1>
+        <h1>To Do List</h1>
     </header>
-    <section>
-        <div class="menu">
-            <button onclick="novoInput()">Adicionar Tarefas</button>
+
+    <div class="wrapper">
+        <h2>Escreva e pressione 'Enter'</h2>
+        <input type="text" id="newItem" placeholder="Sua tarefa aqui" autofocus />
+    
+        <div id="todoList">
+            
         </div>
-    </section>
+    </div>
     <script src="script.js"></script>
+
+<!--
+    const usuario = {
+        nome: 'Eduardo',
+        idade: 26
+    }
+
+    /**
+    * localstorage armazena string
+    * se for adicionado array ou objeto
+    * é necessário converte-lo em string
+    * com JSON.string(nomeDoObjeto)
+    * com JSON.parse converte em objeto
+    */
+
+    // key, value
+    window.localStorage.setItem('user', JSON.stringify(usuario))
+
+    // key
+    console.log(JSON.parse(window.localStorage.getItem('user')))
+
+    // key
+    console.log(window.localStorage.removeItem('todoList'))
+
+    // exclui tudo
+    // window.localStorage.clear()
+
+    // retorna o nome da chave a partir do indice
+    const keyName = window.localStorage.key('idade')
+    console.log(keyName)
+-->
 </body>
 </html>
